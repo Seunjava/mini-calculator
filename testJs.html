@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    <script>
+        function loginchecker()
+        {
+            var unv = un.value; Vu1=V1.value; Vu2=V2.value;RsVu=R.value;
+            if (unv =="")
+            {
+                alert("Your usename is empty");
+            }
+
+            if (Vu1 =="")
+            {
+                alert("Enter the first Value");
+            }
+
+            if (Vu2 =="")
+            {
+                alert("Enter the first Value");
+            }
+
+        }
+
+
+        function Calculator()
+        {
+            var Vu1=V1.value; Vu2=V2.value;RsVu=R.value;
+             
+            if (Vu1 =="")
+            {
+                alert("Enter the first Value");
+            }
+
+            if (Vu2 =="")
+            {
+                alert("Enter the first Value");
+            }
+
+        }
+
+        // onkeyup="sum()"
+    
+        function sum() {
+        var Vu1=V1.value; Vu2=V2.value;RsVu=R.value;
+             
+            if (Vu1 =="")
+            {
+                alert("Enter the first Value");
+            }
+
+            if (Vu2 =="")
+            {
+                alert("Enter the first Value");
+            }
+
+        var Vu1 = document.getElementById('V1').value;
+        var Vu2 = document.getElementById('V2').value;
+        var R = parseInt(Vu1) + parseInt(Vu2);
+        if(!isNaN(R)){
+            document.getElementById('txt3').value = result;
+        }
+
+    </script>
+</head>
+<body>
+
+    <div style="margin: 50px 50px;">
+            <label for="">Username</label><input type="text" style="margin-left: 20px;" id="un" value="" name="usern" placeholder=" Enter your Username"> <br> <br>
+
+            <label for="">Password</label><input type="text" style="margin-left: 20px;" id="pwd" value="" name="PassW" placeholder=" Enter your Password"><br><br>
+
+            <button onclick="loginchecker()" style="margin-left: 80px; height: 35px; background-color: blue; color: white; width: 100px;" type="Login">Login</button>
+
+    </div>
+    
+    <div style="margin: 50px 50px;">
+        <label for="">value 1</label><input type="text" style="margin-left: 20px;" id="V1" value="" name="usern" placeholder=" Enter the first value"> <br> <br>
+
+        <label for="">Value 2</label><input type="text" style="margin-left: 20px;" id="V2" value="" name="PassW" placeholder=" Enter your Password"><br><br>
+
+        <label for="">Result</label><input type="text" style="margin-left: 20px;" id="R" value="" name="PassW" placeholder=" Enter your Password"><br><br>
+
+        <button onkeyup="sum()" style="height: 35px; background-color: blue; color: white; width: 100px;justify-content: center;font-size: xx-large;" type="Login">-</button> 
+        <button onclick="Calculator()" style="margin-left: 80px; height: 35px; background-color: blue; color: white; width: 100px;justify-content: center; font-weight: bold;font-size: xx-large;" type="Login">*</button>
+        <button onclick="Calculator()" style="margin-left: 80px; height: 35px; background-color: blue; color: white; width: 100px;justify-content: center;font-size: xx-large;" type="Login">/</button> 
+
+
+
+</div>
+
+</body>
+</html>
